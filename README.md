@@ -2,7 +2,7 @@
 
 ## Authors:
 - *Stefan Halvadzhiev* (@stefanhalvadzhiev)
-- *Alexandra Georgieva* (@aleksandlg)
+- *Aleksandra Georgieva* (@aleksandlg)
 
 ## Things we did so far
     See JOURNAL.md
@@ -15,7 +15,7 @@
 
   3. Open anaconda powershell terminal and type the following command:
   
-            conda create new <environment_name> python -y
+            conda create -n <environment_name> python -y
 
   4. Activate the newly created environment:
 
@@ -23,16 +23,34 @@
   
   5. Install requirements:
 
-            pip install -r ./deployment/requirements.txt
+            pip install -r .\deployment\requirements.txt
+
   6. Navigate to the project path
 
-            cd ./path/to/project/direcory
+            cd .\path\to\project\directory
+
+  7. Install Kaggle 
+
+            pip install kaggle
+
+  8. Set up the kaggle API
+    
+      * Log-in to kaggle (or sign-up)
+
+      * Navigate to your Account page and go to Settings
+    
+      * Scroll down to the API section and click Create New Token
+
+      * Save the *kaggle.json* to
+
+              .\path\to\project\directory\.kaggle 
+
             
-  7. Run __*Makefile*__
+  9. Run __*Makefile*__
   
             make
             
-  8. Open visual studio code:
+  10. Open visual studio code:
 
             code .
 
